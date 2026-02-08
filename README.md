@@ -113,6 +113,8 @@ synapx-fnol-agent/
 bash
 cd backend
 npm install
+npm install -D nodemon
+npm install express cors multer pdf-parse@1.1.1
 npm run dev
 
 http://localhost:5000
@@ -121,6 +123,8 @@ http://localhost:5000
 
 cd frontend
 npm install
+npm install -D tailwindcss@3.4.17 autoprefixer postcss
+npx tailwindcss init -p
 npm start
 http://localhost:3000
 
