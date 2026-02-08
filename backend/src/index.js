@@ -4,7 +4,6 @@ import { analyzeRouter } from "./routes/analyze.js";
 
 const app = express();
 
-// If you use CRA proxy, CORS isn't required, but keeping it doesn't hurt.
 app.use(cors({
   origin: [
     "http://localhost:3000",

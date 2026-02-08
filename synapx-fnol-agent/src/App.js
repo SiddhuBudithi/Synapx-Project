@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
-      {/* DARK BAND FOR HEADER (so white text is visible) */}
+      {/* HEADER */}
       <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-50">
         <Header />
       </div>
@@ -51,6 +51,7 @@ export default function App() {
         </footer>        
       </main>
 
+      {/* FOOTER */}
       <Footer />
     </div>
   );

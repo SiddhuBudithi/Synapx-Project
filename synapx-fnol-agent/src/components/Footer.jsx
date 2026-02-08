@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <footer className="mt-8 bg-slate-950 text-white">
       <div className="relative overflow-hidden">
-        {/* background gradient + faint pattern */}
+      
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(34,211,238,0.12),transparent_40%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.10),transparent_40%)]" />
         <div className="pointer-events-none absolute inset-0 opacity-15 [background-image:linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:48px_48px]" />
 
@@ -30,7 +30,7 @@ export default function Footer() {
           <div className="flex items-start justify-between gap-6">
             <div className="flex items-center gap-3">
               <div className="text-white/90">
-                {/* simple mark text, optional */}
+              
                 <div className="text-2xl font-semibold tracking-wide">
                   synapx
                 </div>

@@ -8,7 +8,7 @@ const SynapxMark = ({ className = "h-8 w-8" }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
-    {/* simple dot-network mark (replace with real logo later if you want) */}
+    {/* simple dot-network mark */}
     <circle cx="16" cy="18" r="4" fill="currentColor" opacity="0.9" />
     <circle cx="34" cy="12" r="3.5" fill="currentColor" opacity="0.9" />
     <circle cx="48" cy="22" r="4" fill="currentColor" opacity="0.9" />
@@ -42,7 +42,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // close on outside click
+  
   useEffect(() => {
     const onDown = (e) => {
       if (!menuRef.current) return;
@@ -52,7 +52,7 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", onDown);
   }, []);
 
-  // close on ESC
+  
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") setOpen(false);
@@ -63,10 +63,10 @@ export default function Header() {
 
   return (
     <header className="relative z-50 w-full">
-      {/* top padding area */}
+      
       <div className="mx-auto max-w-6xl px-4 pt-6">
         <div className="relative overflow-visible rounded-3xl border border-white/10 bg-slate-900/60 backdrop-blur-xl shadow-[0_20px_60px_-20px_rgba(0,0,0,0.6)]">
-          {/* subtle pattern */}
+          
           <div className="pointer-events-none absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.18),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.12),transparent_35%),radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.10),transparent_35%)]" />
 
           <div className="relative flex items-center justify-between gap-4 px-6 py-4">
@@ -143,7 +143,6 @@ export default function Header() {
                 className="inline-flex items-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 transition md:hidden"
                 type="button"
                 onClick={() => {
-                  // Optional: wire up a mobile drawer later
                 }}
               >
                 Menu
